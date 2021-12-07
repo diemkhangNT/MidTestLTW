@@ -1,0 +1,23 @@
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(57, 109, 33);
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+  /* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+    border: 1px solid rgb(167, 152, 152);
+    background-color: rgb(25, 117, 45);
+    color: rgb(150, 120, 120);
+}
+p b{
+    font-size: 30px;
+}
+.buynow p{
+    padding-bottom: 20px;
+}
+.images{
+    text-align: center;
+}

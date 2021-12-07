@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .important {
+          font-weight: bold;
+          width: 120px;
+          height: 70px;
+        }
+        
+        .lightblue {
+          background-color: lightblue;
+        }
+        button{
+          background-color: gold;
+          width: 100px;
+          height: 50px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").toggleClass("important lightblue");
+            $("#div1").attr("title", "Lightblue")
+          });
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+      <hr>
+      <p style="font-size: 30px;"><strong>Câu 2: </strong> 
+        Tạo một nút bấm Color <span style="color:red;">cố định ở góc trên bên phải</span>  trang web
+        <br>
+        <img class="img-responsive" src="../img/imgdecau2.PNG" alt="Đề câu 2">
+        <br>
+        Khi bấm vào nút này thì màu nền sẽ được Toggle từ màu <span style="background-color:gold;">Gold </span> sang màu <span style="background-color:lightblue;">Lightblue</span>
+      </p>
+      <hr>
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <img src="../img/banner.jpg" alt="Banner" style="width: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                <button id="div1" class="btn btn-light" title="Gold">
+                  Color
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
